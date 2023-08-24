@@ -55,7 +55,7 @@ namespace EvidenceProgram
         /// Vytvoří číselný záznam (věk nebo tel.číslo) a ošetří jej proti tomu, když uživatel údaj nevyplní, nebo místo čísla zadá jiný text
         /// </summary>
         /// <returns>Číslo reprezentující buď věk a nebo tel. číslo pojištěnce</returns>
-            private long VytvorCiselnyZaznam()
+        private long VytvorCiselnyZaznam()
         {
             //Použit datový typ long, aby se vypsala správná chybová hláška i v případě, že uživatel zadá delší než devítimístné tel.číslo//
             long ciselnyZaznam = 0;

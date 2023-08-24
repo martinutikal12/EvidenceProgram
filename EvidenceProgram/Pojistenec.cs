@@ -9,13 +9,13 @@ namespace EvidenceProgram
     public class Pojistenec
     {
         //Jméno pojištěnce//
-        public string Jmeno { get; set; }
+        public string Jmeno { get; private set; }
         //Příjmení pojištěnce//
-        public string Prijmeni { get; set; }
+        public string Prijmeni { get; private set; }
         //Věk pojištěnce//
-        public long Vek { get; set; }
+        public long Vek { get; private set; }
         //Telefonní číslo pojištěnce//
-        public long TelCislo { get; set; }
+        public long TelCislo { get; private set; }
         /// <summary>
         /// Vytvoření nové instance pojištěnce
         /// </summary>
