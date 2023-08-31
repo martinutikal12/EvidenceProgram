@@ -1,0 +1,16 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - Název třídy Databaze je příliš obecný.
+2. Dodržení principů SRP a SoC -
+  SoC - Ve třídě Databaze se v metodě OdeberPojistence zbytečně objevuje interakce s konzolí -> metoda kombinuje logiku a interakci s uživatelksým rozhraním. Informace o zmazání by bylo lepší propagovat přes návratovou hodnotu.
+  SRP - Třída EvidencePojistenych dělá vlastně všechno, chválím sice vhodné rozdělení dílčích úkolů do samostatných metod, ale třeba metody na validaci vstupů mohla zpracovávat samostatná třída.
+3. Vhodný výběr datových typů - Long pro věk je zbytečně velký. Long pro telefonní číslo není špatný, občas dává smysl použít i string.
+4. Formátování kódu - OK
+5. Duplicitní kód a nekonečné cykly - Bez značných duplicit a cykly v pořádku.
+6. Validace vstupních dat - OK
+7. Logičnost a složitost - Jednotlivé operace jsou prováděny jednoduše. Čitelnost kódu kazí zejména kompelxní třída EvidenceProgram, která dělá v podstatě vše. Jinak OK.
+8. Komentáře - OK
+9. Celkové hodnocení - Program je slušně napsaný a splňuje zadání. Byla by vhodné upravit kód tak, aby třída EvidencePojistenych neměla všechnu zodpovědnost a bylo tak dodrženo SRP. -MH
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
+Zdroj: https://www.itnetwork.cz/documents/trainings/jak-ucit-prezencni-skoleni/jak-hodnotit-zaverecne-projekty-studentu
